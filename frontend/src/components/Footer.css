@@ -1,0 +1,41 @@
+.footer {
+    background-color: #1e2a4d;
+    color: #fff;
+  }
+  
+  .footer-logo {
+    height: 32px;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+    justify-content: center;
+  }
+  
+  .footer-social i {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-social i:hover {
+    color: #66d1a8;
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer ul li:hover {
+    color: #66d1a8;
+  }
+  
