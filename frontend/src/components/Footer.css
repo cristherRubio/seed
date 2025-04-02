@@ -1,7 +1,11 @@
 .footer {
-    background-color: #1e2a4d;
-    color: #fff;
-  }
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #1e2a4d;
+  color: #fff;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
   
   .footer-logo {
     height: 32px;

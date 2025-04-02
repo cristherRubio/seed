@@ -23,7 +23,7 @@ const LandingPage = () => {
           Fortalecemos empresas a través de soluciones estructuradas, visión estratégica y acompañamiento constante.
         </p>
         <div>
-          <Link to="/register" className="btn btn-success me-2">COMENZAR</Link>
+          <Link to="/registro" className="btn btn-success me-2">COMENZAR</Link>
           <button onClick={handleScroll} className="btn btn-outline-light">SABER MÁS</button>
         </div>
       </div>

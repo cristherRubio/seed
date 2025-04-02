@@ -1,0 +1,26 @@
+.offcanvas {
+    width: 280px;
+  }
+  
+  @media (min-width: 992px) {
+    .offcanvas {
+      position: static;
+      visibility: visible !important;
+      transform: none !important;
+      border: none;
+      box-shadow: none;
+      height: auto;
+      display: flex !important;
+    }
+  
+    .offcanvas-body {
+      padding: 2rem;
+    }
+  }
+  
+.navbar-toggler {
+border: none !important;
+box-shadow: none !important;
+outline: none !important;
+}
+  
