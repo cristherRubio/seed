@@ -10,76 +10,172 @@
   min-height: 80vh;
 }
   
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
-  .section-label {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-  }  
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}  
   
 /* CARD STYLING OVERRIDES */
 .services-section .card {
-    border: none; /* removes Bootstrap border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10); /* soft shadow */
-    border-radius: 12px;
-    transition: transform 0.2s ease;
-  }
+  border: none; /* removes Bootstrap border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10); /* soft shadow */
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
 
-  .services-section .card i {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .services-section .card:hover {
-    transform: translateY(-4px); /* subtle lift effect on hover */
-  }
-  
-  .services-section .card h3 {
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-  
-  .services-section .card p {
-    color: #444;
-    font-size: 0.95rem;
-  }
-  
-  /* Keep the green card looking distinct */
-  .services-section .card.bg-success {
-    background-color: #66d1a8 !important;
-    color: white;
-  }
+.services-section .card i {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
 
-  .benefits-section {
-    background-color: #fdfdfd;
-  }
+.services-section .card:hover {
+  transform: translateY(-8px); /* subtle lift effect on hover */
+}
+
+.services-section .card h3 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.services-section .card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Keep the green card looking distinct */
+.services-section .card.bg-success {
+  background-color: #66d1a8 !important;
+  color: white;
+}
+
+/* Benefits section */
+.benefits-section {
+  background-color: #fdfdfd;
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+}
+
+.benefit-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10); /* soft shadow */
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
   
-  .benefit-card i {
-    font-size: 2.5rem;
-  }
+.benefit-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Finantial section */
+.financial-tools-section {
+  background-color: #f8f9fc;
+}
+
+.tool-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+}
+
+.tool-icon {
+  font-size: 3rem;
+  color: #198754; /* Bootstrap success green */
+}
+
+.tool-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.tool-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.tool-card.featured {
+  background: linear-gradient(0deg, #e0f8ea, #ffffff);
+}
+
+/* Opportunities */
+.opportunity-card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
   
-  .benefit-card {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10); /* soft shadow */
-    border-radius: 12px;
-    transition: transform 0.2s ease;
-  }
+.opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-box {
+  border-radius: 0.75rem;
+}
+
+.btn-success-soft {
+  background-color: #a7eac1;
+  color: #1e5e34;
+  font-weight: 500;
+}
+
+.btn-success-soft:hover {
+  background-color: #8edfaf;
+}
   
-  .benefit-card:hover {
-    transform: translateY(-4px);
-  }
-  
-  
+/* Trust */
+.btn-success-soft {
+  background-color: #a7eac1;
+  color: #1e5e34;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-success-soft:hover {
+  background-color: #8edfaf;
+}
+
+.stat-card {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Testimonial */
+.testimonial-section {
+  background: #ffffff;
+}
+
+.testimonial-card {
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #198754;
+  border-radius: 50%;
+  padding: 1rem;
+}

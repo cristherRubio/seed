@@ -9,6 +9,7 @@ const RegisterPage = () => {
   const [formData, setFormData] = useState<any>({});
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const APU_URL = import.meta.env.BACKEND_API_URL
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -18,7 +19,7 @@ const RegisterPage = () => {
       newValue = value.replace(/\D/g, '').slice(0, 10);
     }
 
-    setFormData(prev => ({ ...prev, [name]: newValue }));
+    setFormData((prev: any) => ({ ...prev, [name]: newValue }));
 
     const newErrors = { ...errors };
 
@@ -186,7 +187,7 @@ const RegisterPage = () => {
     const payload = transformFormData(cleanedData, personaType);
 
     try {     
-      await axios.post('http://localhost:8000/register/create_user', {
+      await axios.post(`${APU_URL}/register/create_user`, {
         ...payload,
       });
       setMessage('✅ Registro exitoso');
