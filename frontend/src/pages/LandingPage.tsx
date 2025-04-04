@@ -5,6 +5,7 @@ import PublicLayout from '../components/PublicLayout';
 import './LandingPage.css';
 
 const LandingPage = () => {
+  const noImage = false;
   const handleScroll = () => {
     scroller.scrollTo('services', {
       duration: 600,
@@ -15,20 +16,21 @@ const LandingPage = () => {
 
   return (
     <PublicLayout>
-      <div className="hero text-white text-center d-flex flex-column justify-content-center align-items-center">
-        <h1 className="title mb-3">
+      <div className={`hero ${noImage ? 'no-image' : ''}`}>
+        <h1>
           Todo lo que tu empresa necesita, en un solo lugar.
         </h1>
-        <p className="subtitle mb-4">
+        <p>
           Fortalecemos empresas a través de soluciones estructuradas, visión estratégica y acompañamiento constante.
         </p>
         <div>
           <Link to="/registro" className="btn btn-success me-2">COMENZAR</Link>
-          <button onClick={handleScroll} className="btn btn-outline-dark">SABER MÁS</button>
+          <button onClick={handleScroll} className={`btn ${noImage ? 'btn-outline-dark' : 'btn-outline-light'}`}>SABER MÁS</button>
         </div>
       </div>
 
       <Element name="services">
+        {/* SECTION: SERVICIOS */}
         <section className="services-section py-5 px-3">
           <div className="text-center">
             <span className="text-success fw-bold text-uppercase section-label">SERVICIOS</span>
@@ -66,6 +68,7 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+        {/* SECTION: BENEFICIOS */}
         <section className="benefits-section py-5 px-3">
           <div className="text-center mb-4">
             <span className="text-success fw-bold text-uppercase">BENEFICIOS</span>
@@ -117,6 +120,7 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+        {/* SECTION: FINANCIEROS */}
         <section className="financial-tools-section py-5 px-3">
           <div className="text-center mb-4">
             <span className="text-success fw-bold text-uppercase">MÁS SERVICIOS</span>
@@ -170,12 +174,12 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+        {/* SECTION: UPORTUNIDADES */}
         <section className="top-opportunities-section py-5 px-3 bg-white">
           <div className="text-center mb-5">
             <h2 className="fw-bold text-dark">Top Oportunidades</h2>
             <p className="text-muted">oportunidades destacadas del mes</p>
           </div>
-
           <div className="row g-4 justify-content-center">
             {/* Card 1 */}
             <div className="col-md-6 col-lg-4">
@@ -198,13 +202,13 @@ const LandingPage = () => {
 
             {/* Card 2 - Highlight */}
             <div className="col-md-6 col-lg-4">
-              <div className="opportunity-card card h-100 text-center p-4 border-success border-2">
-                <div className="highlight-box bg-success text-white p-4 mb-3 rounded">
+              <div className="opportunity-card card h-100 text-center p-4">
+                <div className="highlight-box bg-light p-3 mb-3 rounded">
                   <h5 className="text-uppercase fw-bold mb-1">Inversión</h5>
-                  <h2 className="fw-bold">15%</h2>
+                  <h2 className="text-success fw-bold">15%</h2>
                   <p className="mb-0 small">Oportunidad de inversión, empresa doble AA. rendimiento atractivo.</p>
                 </div>
-                <button className="btn btn-light w-100">Invierte</button>
+                <button className="btn btn-success-soft w-100">Invierte</button>
                 <ul className="list-unstyled mt-4 text-muted small">
                   <li>Conubia fuga irure ab primis.</li>
                   <li>Elit officiis temporibus nibh.</li>
