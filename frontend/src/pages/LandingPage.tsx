@@ -5,7 +5,6 @@ import PublicLayout from '../components/PublicLayout';
 import './LandingPage.css';
 
 const LandingPage = () => {
-  const noImage = false;
   const handleScroll = () => {
     scroller.scrollTo('services', {
       duration: 600,
@@ -16,16 +15,19 @@ const LandingPage = () => {
 
   return (
     <PublicLayout>
-      <div className={`hero ${noImage ? 'no-image' : ''}`}>
-        <h1>
-          Todo lo que tu empresa necesita, en un solo lugar.
+      <div className="hero">
+        <h1 className="hero-fade hero-delay-0">
+          SEED
         </h1>
-        <p>
+        <h2 className="hero-fade hero-delay-1">
+          Todo lo que tu empresa necesita, en un solo lugar.
+        </h2>
+        <p className="hero-fade hero-delay-2">
           Fortalecemos empresas a través de soluciones estructuradas, visión estratégica y acompañamiento constante.
         </p>
-        <div>
+        <div className="hero-fade hero-delay-3">
           <Link to="/registro" className="btn btn-success me-2">COMENZAR</Link>
-          <button onClick={handleScroll} className={`btn ${noImage ? 'btn-outline-dark' : 'btn-outline-light'}`}>SABER MÁS</button>
+          <button onClick={handleScroll} className="btn btn-outline-dark">SABER MÁS</button>
         </div>
       </div>
 

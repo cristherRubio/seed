@@ -4,19 +4,14 @@
   padding: 6rem 2rem;
   min-height: 80vh;
 
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)
-  ),
-  url('/images/hero-banner.jpg') center/cover no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  color: white;
+  background-color: #f8f9fa; /* light neutral */
+  color: #212529; /* dark gray */
 }
 
 .hero.no-image {
@@ -25,9 +20,17 @@
 }
 
 .hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #66d1a8;
+}
+
+.hero h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #1e5e34;
 }
 
 .hero p {
@@ -36,6 +39,33 @@
   margin-bottom: 2rem;
 }
 
+/* Fade-in base */
+.hero-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Delay per element */
+.hero-delay-0 {
+  animation-delay: 0.2s;
+}
+.hero-delay-1 {
+  animation-delay: 0.5s;
+}
+.hero-delay-2 {
+  animation-delay: 0.9s;
+}
+.hero-delay-3 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
 .title {
   font-size: 2.5rem;

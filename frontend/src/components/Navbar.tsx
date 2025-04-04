@@ -70,6 +70,7 @@ const Navbar = () => {
                   <li><Link className="dropdown-item disabled" to="/asesorate/contabilidad">CONTABILIDAD</Link></li>
                 </ul>
               </li>
+              <li className="nav-item"><Link className="nav-link" to="/en-desarrollo">FACTORAJE</Link></li>
             </ul>
 
             {/* Right actions */}
