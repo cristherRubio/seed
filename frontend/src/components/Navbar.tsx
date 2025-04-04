@@ -65,9 +65,9 @@ const Navbar = () => {
                   ASESÓRATE
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="/asesorate/juridico">JURÍDICO</Link></li>
-                  <li><Link className="dropdown-item" to="/asesorate/financiera">FINANCIERA</Link></li>
-                  <li><Link className="dropdown-item" to="/asesorate/contabilidad">CONTABILIDAD</Link></li>
+                  <li><Link className="dropdown-item disabled" to="/asesorate/juridico">JURÍDICO</Link></li>
+                  <li><Link className="dropdown-item disabled" to="/asesorate/financiera">FINANCIERA</Link></li>
+                  <li><Link className="dropdown-item disabled" to="/asesorate/contabilidad">CONTABILIDAD</Link></li>
                 </ul>
               </li>
             </ul>
