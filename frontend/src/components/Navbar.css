@@ -17,7 +17,12 @@
       padding: 2rem;
     }
   }
-  
+
+.navbar {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar-toggler {
 border: none !important;
 box-shadow: none !important;

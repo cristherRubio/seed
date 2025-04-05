@@ -1,6 +1,5 @@
 .hero {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   padding: 6rem 2rem;
   min-height: 80vh;
 
@@ -10,8 +9,8 @@
   align-items: center;
   text-align: center;
 
-  background-color: #f8f9fa; /* light neutral */
-  color: #212529; /* dark gray */
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
 .hero.no-image {

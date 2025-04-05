@@ -16,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4 py-3">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom px-3 px-lg-4 py-3">
+      <div className="container-fluid px-0">
         <Link className="navbar-brand fw-bold text-success" to="/">SEED</Link>
 
         {/* Hamburger toggle */}
