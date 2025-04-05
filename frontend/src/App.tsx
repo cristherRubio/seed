@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import RegisterPage from './pages/RegisterPage';
@@ -6,7 +5,6 @@ import LandingPage from './pages/LandingPage';
 import WorkingPage from './pages/WorkingPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

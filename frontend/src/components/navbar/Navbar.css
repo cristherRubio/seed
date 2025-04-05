@@ -1,0 +1,55 @@
+/* --- OFFCANVAS overrides for responsiveness --- */
+.offcanvas {
+  width: 280px;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+    display: none;
+  }
+
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+
+  .offcanvas {
+    position: relative;
+    visibility: visible !important;
+    transform: none !important;
+    border: none;
+    box-shadow: none;
+    height: auto;
+    display: flex !important;
+  }
+
+  .offcanvas-body {
+    padding: 2rem;
+  }
+}
+
+/* --- Navbar base styling --- */
+.navbar {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+/* --- Hamburger button reset --- */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* --- Dropdown styling --- */
+.dropdown-menu {
+  font-size: 0.9rem !important;
+  border: none !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dropdown-item:hover {
+  background-color: #e9f6ee;
+  color: var(--color-light-green-accent);
+}

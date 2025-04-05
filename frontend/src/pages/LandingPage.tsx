@@ -1,7 +1,7 @@
 // src/pages/LandingPage.tsx
 import { Link } from 'react-router-dom';
 import { Element, scroller } from 'react-scroll';
-import PublicLayout from '../components/PublicLayout';
+import Layout from '../components/Layout';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -14,7 +14,7 @@ const LandingPage = () => {
   };
 
   return (
-    <PublicLayout>
+    <Layout>
       <div className="hero">
         <h1 className="hero-fade hero-delay-0">
           SEED
@@ -332,7 +332,7 @@ const LandingPage = () => {
           </div>
         </section>
       </Element>
-    </PublicLayout>
+    </Layout>
   );
 };
 

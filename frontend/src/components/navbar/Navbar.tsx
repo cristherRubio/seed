@@ -9,6 +9,7 @@ const Navbar = () => {
   const isLoggedIn = !!localStorage.getItem('token');
 
   const navigate = useNavigate();
+
   const handleLogout = () => {
     localStorage.removeItem('token');
     navigate('/');
@@ -55,19 +56,19 @@ const Navbar = () => {
               <li className="nav-item"><Link className="nav-link" to="/en-desarrollo">INVIERTE</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/en-desarrollo">ASEGÚRATE</Link></li>
               <li className="nav-item dropdown">
-                <Link
+                <a
                   className="nav-link dropdown-toggle"
-                  to="#"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   ASESÓRATE
-                </Link>
-                <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item disabled" to="/asesorate/juridico">JURÍDICO</Link></li>
-                  <li><Link className="dropdown-item disabled" to="/asesorate/financiera">FINANCIERA</Link></li>
-                  <li><Link className="dropdown-item disabled" to="/asesorate/contabilidad">CONTABILIDAD</Link></li>
+                </a>
+                <ul className="dropdown-menu" data-bs-auto-close="outside">
+                  <li><Link className="dropdown-item" to="/asesorate/juridico">JURÍDICO</Link></li>
+                  <li><Link className="dropdown-item" to="/asesorate/financiera">FINANCIERA</Link></li>
+                  <li><Link className="dropdown-item" to="/asesorate/contabilidad">CONTABILIDAD</Link></li>
                 </ul>
               </li>
               <li className="nav-item"><Link className="nav-link" to="/en-desarrollo">FACTORAJE</Link></li>
